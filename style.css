@@ -1,69 +1,95 @@
-/* General Reset */
+/* General Styles */
 body {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
-    background-color: #f9f9f9;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f9;
     color: #333;
-    line-height: 1.6;
 }
 
 /* Container */
 .container {
-    width: 80%;
+    width: 90%;
     max-width: 800px;
-    margin: 20px auto;
-    background: #fff;
-    padding: 20px;
+    margin: 30px auto;
+    background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
 }
 
 /* Header */
-header h1 {
+header {
+    background-color: #0056b3;
+    color: #fff;
     text-align: center;
+    padding: 20px;
+    border-radius: 8px 8px 0 0;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+/* Main Content */
+main {
+    padding: 20px;
+}
+
+/* Cards */
+.card {
+    background: #ffffff;
+    margin: 20px 0;
+    padding: 20px;
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.card h2 {
     color: #0056b3;
-    font-size: 2.5em;
-    margin-bottom: 20px;
-}
-
-/* Sections */
-section {
-    margin-bottom: 20px;
-}
-
-section h2 {
-    font-size: 1.8em;
-    color: #333;
+    font-size: 1.5rem;
     margin-bottom: 10px;
-    border-bottom: 2px solid #0056b3;
+    border-bottom: 2px solid #e0e0e0;
     padding-bottom: 5px;
 }
 
-section p, section ul {
-    font-size: 1em;
+.card ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.card ul li {
     margin-bottom: 10px;
-    line-height: 1.8;
+    padding-left: 25px;
+    position: relative;
 }
 
-ul {
-    list-style: square inside;
+.card ul li::before {
+    content: "✔";
+    color: #0056b3;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+    top: 0;
 }
 
-/* Links */
-a {
+/* Contact Section */
+.contact a {
     color: #0056b3;
     text-decoration: none;
 }
 
-a:hover {
+.contact a:hover {
     text-decoration: underline;
 }
 
 /* Footer */
 footer {
+    background-color: #f4f4f9;
     text-align: center;
-    margin-top: 20px;
-    font-size: 0.9em;
+    padding: 10px 20px;
+    font-size: 0.9rem;
     color: #666;
 }
